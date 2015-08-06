@@ -1,8 +1,8 @@
 def fib(limit):
-    a, b = 0, 1
-    while a < limit:
-        if not a % 2:
-            yield a
-        a, b = b, a + b
+    num1, num2 = 0, 1
+    while num1 < limit:
+        if not num1 % 2:
+            yield num1
+        num1, num2 = num2, num1 + num2
 
 print(sum(fib(4000000)))
